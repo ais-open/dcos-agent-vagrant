@@ -8,8 +8,8 @@ Vagrant.configure("2") do |config|
 
   # Edit the following memory and cpu parameters as desired for your host allocation
   config.vm.provider "virtualbox" do |v|
-    v.memory = 4096
-    v.cpus = 2
+    v.memory = 8196
+    v.cpus = 4
   end
 
   # Create a public network, which generally matched to bridged network.

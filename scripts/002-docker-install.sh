@@ -15,6 +15,6 @@ mkdir -p /etc/systemd/system/docker.service.d && tee /etc/systemd/system/docker.
 ExecStart=
 ExecStart=/usr/bin/docker daemon --storage-driver=overlay -H fd://
 EOF
-yum install -y docker-engine-1.11.2
+yum install -y docker-engine-1.10.3
 systemctl start docker
 systemctl enable docker
